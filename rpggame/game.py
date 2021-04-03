@@ -25,7 +25,6 @@ END_ITEM = "potion"
 VALID_MOVES = ["get item", "go north", "go east", "go south", "go west", "quit"]
 
 
-@pipes
 def start(play_data):
     if play_data.get("current_room") == END_ROOM and END_ITEM in play_data.get(
         "inventory"
